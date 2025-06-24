@@ -26,12 +26,13 @@ html {
   .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
   }
 
   .top-section {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     gap: 200px;
   }
 
@@ -69,17 +70,21 @@ html {
     gap: 30px;
     background-color: var(--LightGrayishMagenta);
     margin: 20px 0px;
-    padding: 0px 30px;
+    padding: 0px 40px;
     border-radius: 8px;
     width: 70%;
   }
 
+  .rating.one {
+    justify-self: left;
+  }
+
   .rating.two{
-    margin-left: 40px;
+    justify-self: center;
   }
   
   .rating.three {
-    margin-left: 80px;
+    justify-self: right;
   }
 
   .stars {
@@ -100,6 +105,62 @@ html {
 
 
   /* bottom section*/
+
+  .bottom-section {
+    display: flex;
+    gap: 40px;
+  }
+
+  .card {
+    padding: 40px 30px;
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 150px;
+  }
+
+  .card.two {
+    margin-top: 20px;
+  }
+
+  .card.three {
+    margin-top: 40px;
+  }
+
+  .profile-picture-and-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .profile-picture {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .personal-info p{
+    margin: 4px 0px;
+  }
+
+  .name {
+    color: var(--White);
+  }
+
+  .verification-status {
+    color: var(--SoftPink);
+  }
+
+  .review {
+    color: var(--LightGrayishMagenta);
+    line-height: 20px;
+    margin: 0;
+  }
+
+
 
 
 
